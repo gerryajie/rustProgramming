@@ -1,3 +1,3 @@
 fn main() {
-    println!("One Rust for everybody");
+    println!("One Rust for everybody enjoy");
 }
