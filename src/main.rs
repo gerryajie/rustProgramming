@@ -129,19 +129,63 @@ use std::cmp::Ordering;
 // }
 // functional call the array
 
-fn main(){
-    let arr_2=[1,2,3,4,5,6,7,8,9];
-    let mut loop_idx=0;
-    loop{
-        if arr_2[loop_idx] %2 == 0{
-            loop_idx += 1;
-            continue;
-        }
-        if arr_2[loop_idx] == 9{
-            break;
-        }
-        println!("val : {}",arr_2[loop_idx]);
-        loop_idx += 1;
-    }
-}
+// fn main(){
+//     let arr_2=[1,2,3,4,5,6,7,8,9];
+//     let mut loop_idx=0;
+//     loop{
+//         if arr_2[loop_idx] %2 == 0{
+//             loop_idx += 1;
+//             continue;
+//         }
+//         if arr_2[loop_idx] == 9{
+//             break;
+//         }
+//         println!("val : {}",arr_2[loop_idx]);
+//         loop_idx += 1;
+//     }
+// }
 // function loop increment
+
+// fn main(){
+//     let arr_2=[1,2,3,4,5,6,7,8,9];
+//     let mut loop_idx=0;
+//     for val in arr_2.iter(){
+//         println!("Val : {}",val)
+//     }
+// }
+// loop for
+
+// fn main(){
+//     let arr_2=[1,2,3,4,5,6,7,8,9];
+//     let mut loop_idx=0; 
+//     while loop_idx<arr_2.len(){
+//         println!("Arr : {}",arr_2[loop_idx]);
+//         loop_idx +=1;
+//     }
+// }
+//while loop
+
+// tuple
+
+// fn main(){
+//    let my_yuple:(u8,String,f64)=(37,"Gerry".to_string(),50_000.00);
+//    println!("Name : {}",my_yuple.1);
+//    let (v1,v2,v3)=my_yuple;
+//    println!("Age : {}",v1);
+//    println!("Expend : {}",v3);
+// }
+
+// tuple
+
+
+fn main(){
+    let mut st1=String::new();
+    st1.push('A');
+    st1.push_str("word");
+    for word in st1.split_whitespace(){
+        println!("{}",word)
+    }
+    let st2=st1.replace("A", "Another"); 
+    println!("{}",st2)
+
+}
