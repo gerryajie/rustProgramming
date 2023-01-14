@@ -190,4 +190,4 @@ fn main(){
 
 }
 
-//function string replacer whitespace
+//function string replace whitespace
