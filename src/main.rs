@@ -189,3 +189,5 @@ fn main(){
     println!("{}",st2)
 
 }
+
+//function string replacer whitespace
