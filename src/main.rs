@@ -183,9 +183,9 @@ fn main(){
     st1.push('A');
     st1.push_str("word");
     for word in st1.split_whitespace(){
-        println!("{}",word)
+        println!("{}",word);
     }
-    let st2=st1.replace("A", "Another"); 
+    let st2=st1.replace("A", "Another One"); 
     println!("{}",st2)
 
 }
