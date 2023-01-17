@@ -193,7 +193,7 @@ use std::cmp::Ordering;
 //function string replace whitespace
 
 fn main(){
-    let st3=String::from("x r t b h k k c a");
+    let st3=String::from("x r t b h k k c a p s");
     let mut v1:Vec<char>=st3.chars().collect();
     v1.sort();
     v1.dedup();
