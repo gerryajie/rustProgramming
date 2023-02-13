@@ -193,7 +193,7 @@ use std::cmp::Ordering;
 //function string replace whitespace
 
 // fn main(){
-//     let st3=String::from("x r t b h k k c a p s");
+//     let st3=String::from("x r t b h k k c a p s u");
 //     let mut v1:Vec<char>=st3.chars().collect();
 //     v1.sort();
 //     v1.dedup();
@@ -216,11 +216,43 @@ use std::cmp::Ordering;
 // }
 // function string 
 
+// fn main(){
+//     let int_u8:u8=8;
+//     let int2_u8:u8=5;
+//     let int_u32:u32=(int_u8 as u32)+(int2_u8 as u32);
+//     println!("Hasilnya : {}",int_u32)
+// }
+
+// function add integer differnt type
+
 fn main(){
-    let int_u8:u8=8;
-    let int2_u8:u8=5;
-    let int_u32:u32=(int_u8 as u32)+(int2_u8 as u32);
-    println!("Hasilnya : {}",int_u32)
+    enum Day{
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
+    impl Day {
+        fn is_weekend(&self)->bool{
+            match self{
+                Day::Saturday|Day::Sunday=>true,
+                _=>false
+            }
+        }
+        
+    }
+   let today:Day=Day::Sunday;
+   match today{
+    Day::Monday=>println!("Everyone hates monday"),
+    Day::Tuesday=>println!("Donut Day"),
+    Day::Wednesday=>println!("Hump Day"),
+    Day::Thursday=>println!("Pay day"),
+    Day::Friday=>println!("Almost Weekend"),
+    Day::Saturday=>println!("Weekend"),
+    Day::Sunday=>println!("Weekend"),
+   } 
+   println!("Is today the weekend ??? {} ",today.is_weekend() );
 }
-
-
