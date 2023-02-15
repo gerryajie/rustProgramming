@@ -261,7 +261,7 @@ use std::cmp::Ordering;
 fn main(){
     let vec1:Vec<i32>=Vec::new();
     let mut vec2:Vec<i32>=vec![1,2,3,4];
-    vec2.push(5);
+    vec2.push(6);
     println!("1st : {}",vec2[0]);
     let second:&i32=&vec2[1];
     match vec2.get(1){
@@ -270,12 +270,12 @@ fn main(){
     }
     for i in &mut vec2{
         *i *=3;
-        println!("hasilnya : {}",i)
+        println!("hasilnya : {:?}",i)
     }
     // for i in &vec2 {
     //     println!("{}",i)
     // }
-    println!("Vector length : {}",vec2.len());
+    println!("Vector length : {:?}",vec2.len());
     println!("pop:{:?}",vec2.pop());
     
 }
