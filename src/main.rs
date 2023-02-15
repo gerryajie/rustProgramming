@@ -272,10 +272,10 @@ fn main(){
         *i *=3;
         println!("hasilnya : {:?}",i)
     }
-    // for i in &vec2 {
-    //     println!("{}",i)
-    // }
     println!("Panjang Vector : {:?}",vec2.len());
     println!("pop:{:?}",vec2.pop());
     
 }
+
+//rust programming language
+//gerry
