@@ -266,7 +266,7 @@ fn main(){
     let second:&i32=&vec2[1];
     match vec2.get(1){
         Some(second)=>println!("2nd: {}",second),
-        None=>println!("no one here"),
+        None=>println!("Kosong/empty"),
     }
     for i in &mut vec2{
         *i *=3;
@@ -275,7 +275,7 @@ fn main(){
     // for i in &vec2 {
     //     println!("{}",i)
     // }
-    println!("Vector length : {:?}",vec2.len());
+    println!("Panjang Vector : {:?}",vec2.len());
     println!("pop:{:?}",vec2.pop());
     
 }
