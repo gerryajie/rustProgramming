@@ -225,34 +225,57 @@ use std::cmp::Ordering;
 
 // function add integer differnt type
 
-fn main(){
-    enum Day{
-        Monday,
-        Tuesday,
-        Wednesday,
-        Thursday,
-        Friday,
-        Saturday,
-        Sunday
-    }
-    impl Day {
-        fn is_weekend(&self)->bool{
-            match self{
-                Day::Saturday|Day::Sunday=>true,
-                _=>false
-            }
-        }
+// fn main(){
+//     enum Day{
+//         Monday,
+//         Tuesday,
+//         Wednesday,
+//         Thursday,
+//         Friday,
+//         Saturday,
+//         Sunday
+//     }
+//     impl Day {
+//         fn is_weekend(&self)->bool{
+//             match self{
+//                 Day::Saturday|Day::Sunday=>true,
+//                 _=>false
+//             }
+//         }
         
+//     }
+//    let today:Day=Day::Sunday;
+//    match today{
+//     Day::Monday=>println!("Everyone hates monday"),
+//     Day::Tuesday=>println!("Donut Day"),
+//     Day::Wednesday=>println!("Hump Day"),
+//     Day::Thursday=>println!("Pay day"),
+//     Day::Friday=>println!("Almost Weekend"),
+//     Day::Saturday=>println!("Weekend"),
+//     Day::Sunday=>println!("Weekend"),
+//    } 
+//    println!("Is today the weekend ??? {} ",today.is_weekend() );
+// }
+// boolean and enum
+
+fn main(){
+    let vec1:Vec<i32>=Vec::new();
+    let mut vec2:Vec<i32>=vec![1,2,3,4];
+    vec2.push(5);
+    println!("1st : {}",vec2[0]);
+    let second:&i32=&vec2[1];
+    match vec2.get(1){
+        Some(second)=>println!("2nd: {}",second),
+        None=>println!("no one here"),
     }
-   let today:Day=Day::Sunday;
-   match today{
-    Day::Monday=>println!("Everyone hates monday"),
-    Day::Tuesday=>println!("Donut Day"),
-    Day::Wednesday=>println!("Hump Day"),
-    Day::Thursday=>println!("Pay day"),
-    Day::Friday=>println!("Almost Weekend"),
-    Day::Saturday=>println!("Weekend"),
-    Day::Sunday=>println!("Weekend"),
-   } 
-   println!("Is today the weekend ??? {} ",today.is_weekend() );
+    for i in &mut vec2{
+        *i *=3;
+        println!("hasilnya : {}",i)
+    }
+    // for i in &vec2 {
+    //     println!("{}",i)
+    // }
+    println!("Vector length : {}",vec2.len());
+    println!("pop:{:?}",vec2.pop());
+    
 }
